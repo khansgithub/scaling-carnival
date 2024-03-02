@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            :root{
+                --w: 70%;
+                --h: 600;
+            }
+            #main{
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+            #app{
+                height: var(--h);
+                width: var(--w);
+                /* background-color: black; */
+                position: absolute;
+                top: 0; bottom: 0;left: 0; right: 0;
+                margin: auto;
+                border: 1px solid black
+            }
+            #addTask{
+                position: absolute;
+                top: 30%; bottom: 0%;left: 0; right: 0;
+                margin: auto;
+                box-sizing: content-box;
+                width: 50%;
+                height: 15%;
+                border: 1px solid violet
+            }
+            #topBar{
+                position: absolute;
+                left: 0; right: 0;
+                margin: auto;
+                border: 1px solid green;
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center
+            }
+            #topBar div{
+                display: flex;
+                position: relative;
+                padding: 10px;
+            }           
+            
+            #left{
+                margin-right: auto;
+            }
+
+            #right{
+                margin-left: auto;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="app">
+                <div id="topBar">
+                    <div id="left"><h1>Today {{}} tasks</h1></div>
+                    <div id="right"><button>AM/PM</button></div>
+                </div>
+                <div id="addTask"></div>
+            </div>
+        </div>
+    </body>
+</html>
